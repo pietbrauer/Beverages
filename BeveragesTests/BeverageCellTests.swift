@@ -1,7 +1,7 @@
-import XCTest
+import FBSnapshotTestCase
 import Beverages
 
-class BeverageCellTests: XCTestCase {
+class BeverageCellTests: FBSnapshotTestCase {
     func testCellConfiguration() {
         var beverage = Beverage.Beer
         beverage.unitsDrunk = 3
@@ -12,6 +12,8 @@ class BeverageCellTests: XCTestCase {
         XCTAssertEqual(subject.beverageNameLabel.text!, "Beer (0.5 l)")
         XCTAssertEqual(subject.amountDrunkLabel.text!, "3 drunk today")
         XCTAssertEqual(subject.stepper.value, 3)
+
+        FBSnapshotVerifyView(subject)
     }
 
     func testStepper() {

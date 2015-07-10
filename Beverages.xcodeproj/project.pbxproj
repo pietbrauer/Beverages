@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		238872EC1B4EE8D6005DE0F9 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 238872EB1B4EE8D6005DE0F9 /* FBSnapshotTestCase.framework */; };
+		238872EE1B4EE8F2005DE0F9 /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 238872EB1B4EE8D6005DE0F9 /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23F0E2501B4E95ED0048824E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0E24F1B4E95ED0048824E /* AppDelegate.swift */; };
 		23F0E2521B4E95ED0048824E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0E2511B4E95ED0048824E /* ViewController.swift */; };
 		23F0E2571B4E95ED0048824E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F0E2561B4E95ED0048824E /* Images.xcassets */; };
@@ -27,7 +29,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		238872ED1B4EE8E9005DE0F9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				238872EE1B4EE8F2005DE0F9 /* FBSnapshotTestCase.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		238872EB1B4EE8D6005DE0F9 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = ../Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		23F0E24A1B4E95ED0048824E /* Beverages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beverages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0E24E1B4E95ED0048824E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23F0E24F1B4E95ED0048824E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238872EC1B4EE8D6005DE0F9 /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +130,7 @@
 		23F0E2631B4E95ED0048824E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				238872EB1B4EE8D6005DE0F9 /* FBSnapshotTestCase.framework */,
 				23F0E2641B4E95ED0048824E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -145,6 +163,7 @@
 				23F0E25B1B4E95ED0048824E /* Sources */,
 				23F0E25C1B4E95ED0048824E /* Frameworks */,
 				23F0E25D1B4E95ED0048824E /* Resources */,
+				238872ED1B4EE8E9005DE0F9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -365,6 +384,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -384,6 +404,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = BeveragesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -411,6 +432,7 @@
 				23F0E26B1B4E95ED0048824E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23F0E26C1B4E95ED0048824E /* Build configuration list for PBXNativeTarget "BeveragesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +441,7 @@
 				23F0E26E1B4E95ED0048824E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

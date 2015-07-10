@@ -8,7 +8,7 @@ public class BeverageCell: UITableViewCell {
 
     lazy public var beverageEmojiLabel: UILabel = {
         let label = UILabel(frame: .zeroRect)
-        label.font = UIFont.systemFontOfSize(40)
+        label.font = UIFont.systemFontOfSize(25)
         return label
     }()
 
@@ -68,8 +68,8 @@ public class BeverageCell: UITableViewCell {
         super.layoutSubviews()
 
         // beverageEmojiLabel
-        // let emojiSize = beverageEmojiLabel.sizeThatFits(CGSize(width: 1000, height: 0))
-        beverageEmojiLabel.frame = CGRect(x: Padding, y: Padding, width: 50, height: Int(contentView.frame.size.height) - 2 * Padding)
+        let emojiSize = beverageEmojiLabel.sizeThatFits(CGSize(width: 1000, height: 0))
+        beverageEmojiLabel.frame = CGRect(x: Padding, y: Padding, width: Int(emojiSize.width), height: Int(contentView.frame.size.height) - 2 * Padding)
 
         // stepper
         let stepperWidth = Int(stepper.frame.size.width)
